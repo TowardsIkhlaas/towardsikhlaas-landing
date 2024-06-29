@@ -6,7 +6,7 @@ export default function Home() {
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
-          src="/towardsikhlaas-landing/towards_ikhlaas_type_logo.svg"
+          src="/towards_ikhlaas_type_logo.svg"
           alt="Towards Ikhlaas Logo"
           width={1000}
           height={33}
@@ -23,7 +23,7 @@ export default function Home() {
           href="https://simplyqibla.towardsikhlaas.com"
           className="group relative rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-100 hover:bg-cover hover:bg-center relative overflow-hidden"
         >
-          <div className="absolute inset-0 bg-none group-hover:bg-[url('/towardsikhlaas-landing/brown.jpg')] group-hover:bg-cover group-hover:bg-center transition-all duration-300"></div>
+          <div className="absolute inset-0 bg-none group-hover:bg-[url('/brown.jpg')] group-hover:bg-cover group-hover:bg-center transition-all duration-300"></div>
           <h2 className={`mb-3 text-2xl font-semibold relative z-10`}>
             SimplyQibla{" "}
             <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
