@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
+
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
     output: "export",
-    basePath: "/towardsikhlaas-landing",
+    assetPrefix: isProd ? 'https://towardsikhlaas.com' : undefined,
     images: {
         unoptimized: true,
     },
