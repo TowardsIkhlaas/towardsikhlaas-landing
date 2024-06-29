@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 h-full w-full bg-[radial-gradient(#333438_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_80%_at_50%_75%,#000_70%,transparent_100%)]">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 h-full w-full bg-[radial-gradient(#333438_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_80%_at_50%_50%,#000_70%,transparent_100%)]">
       <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full">
         <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
+          className="relative select-none dark:drop-shadow-[0_0_0.3rem_#ffffff70]"
           src="https://towardsikhlaas.com/towards_ikhlaas_type_logo.svg"
           alt="Towards Ikhlaas Logo"
           width={1000}
