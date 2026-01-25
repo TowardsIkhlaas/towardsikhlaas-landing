@@ -21,8 +21,8 @@ export function BentoGrid() {
   return (
     <section className="w-full px-4 py-8 md:py-24">
       <div className="mx-auto max-w-5xl">
-        <h2 className="mb-8 text-center text-2xl font-bold tracking-tight md:text-3xl">
-          Our Apps
+        <h2 className="mb-4 text-center text-2xl font-bold tracking-tight md:text-3xl">
+          Stuff we&apos;re Making
         </h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {apps.map((app, index) => (
