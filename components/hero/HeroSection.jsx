@@ -7,7 +7,7 @@ export function HeroSection() {
   const offset = useParallax(0.15);
 
   return (
-    <section className="relative w-full overflow-hidden">
+    <section className="relative w-full overflow-hidden md:landscape:h-screen md:landscape:flex md:landscape:items-center md:landscape:justify-center">
       {/* Background layer - static, positioned at top */}
       <div className="absolute top-0 left-0 w-full z-0">
         <Image

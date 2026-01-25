@@ -11,8 +11,8 @@ export function Footer() {
       hoverColor: "hover:text-amber-600",
     },
     {
-      label: "Ko-Fi",
-      href: "https://ko-fi.com/TowardsIkhlaas",
+      label: "Contact",
+      href: "mailto:towardsikhlaas+landing@gmail.com",
       hoverColor: "hover:text-cyan-600",
     },
   ];

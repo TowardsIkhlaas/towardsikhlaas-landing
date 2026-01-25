@@ -24,7 +24,7 @@ export function BentoGrid() {
         <h2 className="mb-4 text-center text-2xl font-bold tracking-tight md:text-3xl">
           Stuff we&apos;re Making
         </h2>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-col gap-4">
           {apps.map((app, index) => (
             <AppCard key={index} {...app} />
           ))}
