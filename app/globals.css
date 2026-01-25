@@ -2,32 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    /* Custom color palette */
+    --ink: oklch(0.5352 0.0751 85.51);
+    --ink-muted: oklch(0.5598 0.0282 90);
+    --surface: oklch(0.9857 0.0167 88);
+    --canvas: oklch(0.91 0.03 67.4);
+
+    /* shadcn mappings */
+    --background: 45 30% 91%;
+    --foreground: 85 40% 35%;
+    --card: 88 30% 97%;
+    --card-foreground: 85 40% 35%;
+    --popover: 88 30% 97%;
+    --popover-foreground: 85 40% 35%;
+    --primary: 85 40% 35%;
+    --primary-foreground: 88 30% 97%;
+    --secondary: 67 15% 91%;
+    --secondary-foreground: 85 40% 35%;
+    --muted: 88 30% 97%;
+    --muted-foreground: 90 15% 56%;
+    --accent: 88 30% 97%;
+    --accent-foreground: 85 40% 35%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 85 10% 80%;
+    --input: 85 10% 80%;
+    --ring: 85 40% 35%;
+    --radius: 0.5rem;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--canvas);
+    color: var(--ink);
+    background-image: url('/pattern.svg');
+    background-repeat: repeat;
+  }
+
+  img {
+    user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: none;
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .bg-surface {
+    background-color: var(--surface);
+  }
+
+  .bg-canvas {
+    background-color: var(--canvas);
+  }
+
+  .text-ink {
+    color: var(--ink);
+  }
+
+  .text-ink-muted {
+    color: var(--ink-muted);
   }
 }
