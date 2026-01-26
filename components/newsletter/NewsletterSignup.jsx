@@ -4,8 +4,8 @@ export function NewsletterSignup() {
   return (
     <section className="w-full py-4 px-4">
       <div className="mx-auto max-w-xl text-center">
-        <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
-          Build for Muslims!
+        <h2 className="text-2xl font-bold uppercase tracking-tight md:text-3xl">
+          By Muslims, For Muslims
         </h2>
         <p className="mt-2 text-ink-muted">
           Sign up for our monthly newsletter to see:
