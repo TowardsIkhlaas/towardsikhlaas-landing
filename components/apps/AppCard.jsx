@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 
 const DEFAULT_IMAGE = "/palms.svg";
 
@@ -40,6 +41,11 @@ export function AppCard({ title, description, image, href, badge, featured }) {
         </CardHeader>
         <CardContent>
           <p className="text-sm text-ink-muted">{description}</p>
+          {href && (
+            <Button variant="default" size="sm" className="mt-3 px-4 py-2 rounded-full">
+              Learn more →
+            </Button>
+          )}
         </CardContent>
       </Card>
     </CardWrapper>

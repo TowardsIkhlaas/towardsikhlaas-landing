@@ -17,7 +17,7 @@
     --card-foreground: 85 40% 35%;
     --popover: 88 30% 97%;
     --popover-foreground: 85 40% 35%;
-    --primary: 85 40% 35%;
+    --primary: oklch(0.7009 0.0856 188.56);
     --primary-foreground: 88 30% 97%;
     --secondary: 67 15% 91%;
     --secondary-foreground: 85 40% 35%;
