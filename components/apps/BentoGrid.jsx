@@ -11,6 +11,13 @@ const apps = [
     featured: true,
   },
   {
+    title: "tmux prayer times",
+    description:
+      "prayer times in your tmux setup!",
+    href: "https://github.com/TowardsIkhlaas/tmux-prayer",
+    badge: "For Nerds",
+  },
+  {
     title: "WishMyMasjid",
     description: "Wishlists for masjids. Connecting donors with masjid needs.",
     badge: "Building Now",
